@@ -1,0 +1,26 @@
+<div  ng-hide="$ctrl.event == 'ver'">
+<form class="md-inline-form" name="$ctrl.noteForm">
+
+    <md-input-container>
+      <label for="testInput">Titulo</label>
+          <input type="text" id="testInput"
+          ng-model="$ctrl.noteForm.title" md-autofocus required md-no-asterisk md-maxlength="50">
+          <div ng-messages="$ctrl.noteForm.title.$error">
+          </div>
+        </md-input-container>
+      
+      <md-input-container class="md-block">
+          <label>Contenido</label>
+        <input md-maxlength="100" required md-no-asterisk name="contenido" ng-model="$ctrl.noteForm.content">
+        <div ng-message-exp="['required', 'maxlength']" ng-messages="$ctrl.noteForm.content.$error">
+        </div>
+      </md-input-container>
+  </form>
+
+  <md-button ng-click="$parent.$ctrl.close()" class="md-warn">
+    Cancelar
+  </md-button>
+  <md-button ng-click="$ctrl.guardarNota()" ng-disabled="$ctrl.formValid()" class="md-raised md-primary">
+    Guardar
+  </md-button>
+</div>

@@ -1,0 +1,16 @@
+home {
+  main {
+    padding-left: 10px;
+      div{
+        height: 100%;
+        padding-bottom: 15px; 
+      }
+      md-toolbar{
+        box-shadow: 1px 1px 1px rgba(48,48,48,0.25);
+      }
+       md-content {
+        font-size: 14px;
+        padding: 24px; 
+      }
+  }
+}

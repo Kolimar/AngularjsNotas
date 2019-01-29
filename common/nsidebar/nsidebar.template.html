@@ -1,0 +1,13 @@
+<md-button ng-click="$ctrl.toggleRight()" class="md-primary">
+	{{$ctrl.btnText}}
+</md-button>
+<md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right" md-disable-close-events>
+
+	<md-toolbar class="md-theme-light">
+		<h1 class="md-toolbar-tools">{{$ctrl.action}}</h1>
+	</md-toolbar>
+	<md-content layout-padding>
+    <nform event="$ctrl.eventtrigger" on-save="$ctrl.close()"></nform>  
+  </md-content>
+
+</md-sidenav>
