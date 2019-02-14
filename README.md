@@ -9,5 +9,4 @@ Arquitectura:
 
 La arquitectura está basada en componentes y el data flow es en un solo sentido.
 
-DEMO:
-https://stackblitz.com/edit/angularjs-es6-notas
+DEMO:https://angularjs-es6-notas.stackblitz.io
